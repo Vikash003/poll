@@ -102,7 +102,7 @@ MENU_OPTIONS = {
 }
 
 
-def menu():
+if __name__ == "__main__":
     with get_connection() as connection:
         database.create_tables(connection)
 
@@ -111,6 +111,3 @@ def menu():
             MENU_OPTIONS[selection]()
         except KeyError:
             print("Invalid input selected. Please try again.")
-
-
-menu()
