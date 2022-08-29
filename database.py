@@ -49,7 +49,6 @@ def create_tables(connection):
 def create_poll(connection, title: str, owner: str) -> int:
     with get_cursor(connection) as cursor:
         cursor.execute(INSERT_POLL_RETURN_ID, (title, owner))
-
         poll_id = cursor.fetchone()[0]
         return poll_id
 
