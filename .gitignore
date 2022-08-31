@@ -1,4 +1,5 @@
-bin/
-include/
-lib/
+venv/
+git.sh/
+p
 /.env
+/.DS_Store
