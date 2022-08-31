@@ -1,5 +1,5 @@
 venv/
-git.sh/
+/git.sh
 .idea/
 p
 /.env
